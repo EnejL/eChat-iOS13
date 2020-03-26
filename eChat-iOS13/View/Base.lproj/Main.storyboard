@@ -80,7 +80,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MBv-WA-B6w"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Xfo-qg-iYX"/>
+                    <navigationItem key="navigationItem" id="Xfo-qg-iYX">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Lkg-Tk-fkR">
+                            <connections>
+                                <action selector="logOutPressed:" destination="Qpl-wG-CyN" id="JG9-2I-lnW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="rbr-wc-PC2" id="WOC-IE-vNL"/>
                         <outlet property="tableView" destination="ipM-rD-hcH" id="lH3-oj-0ze"/>
@@ -163,13 +169,6 @@
                                     <constraint firstItem="WFr-Fe-js1" firstAttribute="leading" secondItem="Bwc-Cr-sKW" secondAttribute="leading" id="rMM-Fl-Bmq"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-VV-XQn">
-                                <rect key="frame" x="20" y="359" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="BrandLightBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
@@ -185,7 +184,6 @@
                     <navigationItem key="navigationItem" id="fKv-dz-06W"/>
                     <connections>
                         <outlet property="emailTextfield" destination="HmT-PK-ciK" id="j79-4e-iUd"/>
-                        <outlet property="errorMessage" destination="4Pm-VV-XQn" id="j8t-3u-yud"/>
                         <outlet property="passwordTextfield" destination="UJB-HO-igw" id="rXg-Ly-QxU"/>
                     </connections>
                 </viewController>
@@ -215,7 +213,7 @@
                                     <segue destination="tjs-4U-Vs4" kind="show" id="sJE-wT-q1N"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️eChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Qo-x40" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚡️eChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ff-Qo-x40">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="TYV-Rf-qHR"/>
@@ -395,6 +393,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="93h-KW-yFE"/>
+        <segue reference="obB-ZJ-zk8"/>
     </inferredMetricsTieBreakers>
 </document>
