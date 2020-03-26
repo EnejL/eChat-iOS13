@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		31FEA1622427553000CBEF9D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA1612427553000CBEF9D /* LoginViewController.swift */; };
 		31FEA1642427553D00CBEF9D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA1632427553D00CBEF9D /* ChatViewController.swift */; };
 		48ED25C5B707397A8FCB24E5 /* Pods_eChat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29267498868CEFA63F837027 /* Pods_eChat_iOS13.framework */; };
+		5C814110242CC97600D11288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C81410F242CC97600D11288 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		31FEA15F2427551300CBEF9D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		31FEA1612427553000CBEF9D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31FEA1632427553D00CBEF9D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5C81410F242CC97600D11288 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC543EFF9F3F09695D04CC1 /* Pods-eChat-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eChat-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		F3DF017ACB1A08618CA46071 /* Pods-eChat-iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eChat-iOS13.release.xcconfig"; path = "Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				31FEA14F242753B400CBEF9D /* Assets.xcassets */,
 				31FEA151242753B400CBEF9D /* LaunchScreen.storyboard */,
 				31FEA154242753B400CBEF9D /* Info.plist */,
+				5C81410F242CC97600D11288 /* GoogleService-Info.plist */,
 			);
 			path = "eChat-iOS13";
 			sourceTree = "<group>";
@@ -116,7 +119,6 @@
 				8CC543EFF9F3F09695D04CC1 /* Pods-eChat-iOS13.debug.xcconfig */,
 				F3DF017ACB1A08618CA46071 /* Pods-eChat-iOS13.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,7 +141,7 @@
 				31FEA13F242753B200CBEF9D /* Sources */,
 				31FEA140242753B200CBEF9D /* Frameworks */,
 				31FEA141242753B200CBEF9D /* Resources */,
-				35BAFB4A2B100808242011A3 /* [CP] Embed Pods Frameworks */,
+				A9DF2683B035364CCD4AC2C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31FEA153242753B400CBEF9D /* LaunchScreen.storyboard in Resources */,
+				5C814110242CC97600D11288 /* GoogleService-Info.plist in Resources */,
 				31FEA150242753B400CBEF9D /* Assets.xcassets in Resources */,
 				31FEA14E242753B200CBEF9D /* Main.storyboard in Resources */,
 			);
@@ -197,23 +200,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35BAFB4A2B100808242011A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		88FD2301E9A9A365D3E86F98 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +220,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DF2683B035364CCD4AC2C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

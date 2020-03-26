@@ -163,6 +163,13 @@
                                     <constraint firstItem="WFr-Fe-js1" firstAttribute="leading" secondItem="Bwc-Cr-sKW" secondAttribute="leading" id="rMM-Fl-Bmq"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-VV-XQn">
+                                <rect key="frame" x="20" y="359" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="BrandLightBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
@@ -178,12 +185,13 @@
                     <navigationItem key="navigationItem" id="fKv-dz-06W"/>
                     <connections>
                         <outlet property="emailTextfield" destination="HmT-PK-ciK" id="j79-4e-iUd"/>
+                        <outlet property="errorMessage" destination="4Pm-VV-XQn" id="j8t-3u-yud"/>
                         <outlet property="passwordTextfield" destination="UJB-HO-igw" id="rXg-Ly-QxU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mr4-Ai-5Jp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.1159420289855" y="-295.3125"/>
+            <point key="canvasLocation" x="2766.666666666667" y="-295.3125"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="LKJ-5z-4lr">
@@ -387,6 +395,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="obB-ZJ-zk8"/>
+        <segue reference="93h-KW-yFE"/>
     </inferredMetricsTieBreakers>
 </document>

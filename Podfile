@@ -4,7 +4,7 @@ target 'eChat-iOS13' do
   use_frameworks!
 
   # Pods for eChat-iOS13
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
   
-  pod 'CLTypingLabel', '~> 0.4.0'
-
 end
