@@ -19,6 +19,7 @@
 		31FEA1642427553D00CBEF9D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA1632427553D00CBEF9D /* ChatViewController.swift */; };
 		48ED25C5B707397A8FCB24E5 /* Pods_eChat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29267498868CEFA63F837027 /* Pods_eChat_iOS13.framework */; };
 		5C814110242CC97600D11288 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C81410F242CC97600D11288 /* GoogleService-Info.plist */; };
+		5CFE72A6242D0DF300ECAF5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE72A5242D0DF300ECAF5B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		31FEA1612427553000CBEF9D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31FEA1632427553D00CBEF9D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5C81410F242CC97600D11288 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CFE72A5242D0DF300ECAF5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8CC543EFF9F3F09695D04CC1 /* Pods-eChat-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eChat-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		F3DF017ACB1A08618CA46071 /* Pods-eChat-iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eChat-iOS13.release.xcconfig"; path = "Target Support Files/Pods-eChat-iOS13/Pods-eChat-iOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +75,9 @@
 		31FEA145242753B200CBEF9D /* eChat-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
-				31FEA15C2427547B00CBEF9D /* Controller */,
 				31FEA15B2427547300CBEF9D /* Models */,
-				31FEA15A242753F000CBEF9D /* View */,
+				31FEA15A242753F000CBEF9D /* Views */,
+				31FEA15C2427547B00CBEF9D /* Controllers */,
 				31FEA146242753B200CBEF9D /* AppDelegate.swift */,
 				31FEA148242753B200CBEF9D /* SceneDelegate.swift */,
 				31FEA14A242753B200CBEF9D /* ViewController.swift */,
@@ -83,16 +85,17 @@
 				31FEA151242753B400CBEF9D /* LaunchScreen.storyboard */,
 				31FEA154242753B400CBEF9D /* Info.plist */,
 				5C81410F242CC97600D11288 /* GoogleService-Info.plist */,
+				5CFE72A5242D0DF300ECAF5B /* Constants.swift */,
 			);
 			path = "eChat-iOS13";
 			sourceTree = "<group>";
 		};
-		31FEA15A242753F000CBEF9D /* View */ = {
+		31FEA15A242753F000CBEF9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				31FEA14C242753B200CBEF9D /* Main.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		31FEA15B2427547300CBEF9D /* Models */ = {
@@ -102,7 +105,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		31FEA15C2427547B00CBEF9D /* Controller */ = {
+		31FEA15C2427547B00CBEF9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				31FEA15D2427550600CBEF9D /* WelcomeViewController.swift */,
@@ -110,7 +113,7 @@
 				31FEA1612427553000CBEF9D /* LoginViewController.swift */,
 				31FEA1632427553D00CBEF9D /* ChatViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		65327124DAF71AF9EE521636 /* Pods */ = {
@@ -253,6 +256,7 @@
 				31FEA15E2427550600CBEF9D /* WelcomeViewController.swift in Sources */,
 				31FEA147242753B200CBEF9D /* AppDelegate.swift in Sources */,
 				31FEA149242753B200CBEF9D /* SceneDelegate.swift in Sources */,
+				5CFE72A6242D0DF300ECAF5B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

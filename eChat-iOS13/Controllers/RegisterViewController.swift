@@ -15,6 +15,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var errorMessage: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = K.appName
+    }
+    
     @IBAction func registerPressed(_ sender: UIButton) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text {
@@ -25,7 +30,7 @@ class RegisterViewController: UIViewController {
                     self.errorMessage.textColor = UIColor.red
                 } else {
                     // If there are no errors, we navigate to the ChatViewController
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }
