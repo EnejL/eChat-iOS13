@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31E59265242D40D700922AAF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E59264242D40D700922AAF /* Message.swift */; };
 		31FEA147242753B200CBEF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA146242753B200CBEF9D /* AppDelegate.swift */; };
 		31FEA149242753B200CBEF9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA148242753B200CBEF9D /* SceneDelegate.swift */; };
 		31FEA14B242753B200CBEF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA14A242753B200CBEF9D /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		29267498868CEFA63F837027 /* Pods_eChat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eChat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E59264242D40D700922AAF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		31FEA143242753B200CBEF9D /* eChat-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eChat-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FEA146242753B200CBEF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FEA148242753B200CBEF9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		31FEA15B2427547300CBEF9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				31E59264242D40D700922AAF /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				31FEA1622427553000CBEF9D /* LoginViewController.swift in Sources */,
 				31FEA14B242753B200CBEF9D /* ViewController.swift in Sources */,
 				31FEA1602427551300CBEF9D /* RegisterViewController.swift in Sources */,
+				31E59265242D40D700922AAF /* Message.swift in Sources */,
 				31FEA1642427553D00CBEF9D /* ChatViewController.swift in Sources */,
 				31FEA15E2427550600CBEF9D /* WelcomeViewController.swift in Sources */,
 				31FEA147242753B200CBEF9D /* AppDelegate.swift in Sources */,
