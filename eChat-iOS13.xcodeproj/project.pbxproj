@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31E59265242D40D700922AAF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E59264242D40D700922AAF /* Message.swift */; };
+		31E59268242D488C00922AAF /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E59266242D488C00922AAF /* MessageCell.swift */; };
+		31E59269242D488C00922AAF /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31E59267242D488C00922AAF /* MessageCell.xib */; };
 		31FEA147242753B200CBEF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA146242753B200CBEF9D /* AppDelegate.swift */; };
 		31FEA149242753B200CBEF9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA148242753B200CBEF9D /* SceneDelegate.swift */; };
 		31FEA14B242753B200CBEF9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEA14A242753B200CBEF9D /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		29267498868CEFA63F837027 /* Pods_eChat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eChat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E59264242D40D700922AAF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		31E59266242D488C00922AAF /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		31E59267242D488C00922AAF /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		31FEA143242753B200CBEF9D /* eChat-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eChat-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FEA146242753B200CBEF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FEA148242753B200CBEF9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				31FEA14C242753B200CBEF9D /* Main.storyboard */,
+				31E59266242D488C00922AAF /* MessageCell.swift */,
+				31E59267242D488C00922AAF /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E59269242D488C00922AAF /* MessageCell.xib in Resources */,
 				31FEA153242753B400CBEF9D /* LaunchScreen.storyboard in Resources */,
 				5C814110242CC97600D11288 /* GoogleService-Info.plist in Resources */,
 				31FEA150242753B400CBEF9D /* Assets.xcassets in Resources */,
@@ -253,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31FEA1622427553000CBEF9D /* LoginViewController.swift in Sources */,
+				31E59268242D488C00922AAF /* MessageCell.swift in Sources */,
 				31FEA14B242753B200CBEF9D /* ViewController.swift in Sources */,
 				31FEA1602427551300CBEF9D /* RegisterViewController.swift in Sources */,
 				31E59265242D40D700922AAF /* Message.swift in Sources */,
